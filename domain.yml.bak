@@ -1,0 +1,88 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- restart:
+    use_entities: true
+- Καλωσόρισμα:
+    use_entities: true
+- location:
+    use_entities: true
+- access:
+    use_entities: true
+- cost:
+    use_entities: true
+- reason:
+    use_entities: true
+- education:
+    use_entities: true
+- biography:
+    use_entities: true
+- timetable:
+    use_entities: true
+- visit:
+    use_entities: true
+- events:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Καλώς ήρθατε στο Μουσείο Νίκος Καζαντζάκης. Το όνομα μου είναι Γιώργος και μπορώ να σε βοηθήσω να περιηγηθείς στο Μουσείο. Αν θές κάνες μου μία ερώτηση.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Παρακαλώ. Χάρηκα που βοήθησα!
+  utter_goodbye:
+  - text: Σε ευχαριστούμε για την επίσκεψη
+  - text: Αντίο, θα σε περιμένουμε στο Μουσείο
+  - text: Παρακαλώ, είμαστε πάντα στην διάθεση σας.
+  utter_iamabot:
+  - text: Είμαι ο ο προσωπικός βοηθός σου και μπορώ να απαντήσω στις ερωτήσεις σου.
+  utter_welcome:
+  - text: Καλώς ήρθατε στο Μουσείο Νίκος Καζαντζάκης. Το όνομα μου είναι Γιώργος και μπορώ να σε βοηθήσω να περιηγηθείς στο Μουσείο. Αν θές κάνε μου μία ερώτηση.
+  utter_location:
+  - text: Το Μουσείο  βρίσκεται στο πατρογονικό χωριό του Νίκου Καζαντζάκη, τη Μυρτιά (το   ιστορικό χωριό Βαρβάροι), 15 χιλιόμετρα νότια της πόλης του Ηρακλείου Κρήτης. Δές εδώ στο [χάρτη](https://g.page/kazantzakismuseum?share)
+  utter_access:
+  - text: Μπορείς να έρθεις με αυτοκίνητο, ταξί ή με το ΚΤΕΛ. Περισσότερες πληροφορίες μπορείς να αναζητήσεις [εδώ](https://www.kazantzaki.gr/gr/access)
+  utter_ticket:
+  - text: Το κόστος του εισητηρίου δεν είναι πολύ μεγαλό, ενώ υπάρχουν και ειδικές τιμές για κάποιες ομάδες. Περισσότερες πληροφορίες μπορείς να αναζητήσεις [εδώ](https://www.kazantzaki.gr/gr/tickets)
+  utter_reason:
+  - text: Θα μάθεις τα πάντα για τον μεγάλο συγγραφέα Νίκο Καζαντζάκη, που τα βιβλία του ταξίδεψαν και μας ταξίδεψαν σε όλο τον κόσμο. Θα δείς προσωπικά αντικείμενα και φωτογραφίες, σπάνιες εκδόσεις, επιστολές και άλλα πολλά. Περισσότερα μπορείς να βρείς [εδώ](https://www.kazantzaki.gr)
+  utter_bio:
+  - text: Ο Νίκος Καζαντζάκης γεννήθηκε στο Ηράκλειο της τουρκοκρατούμενης Κρήτης. Σπούδασε Νομική στην Αθήνα (1902-1906), και μεταπτυχιακά στο Παρίσι (1907-1909), όπου επηρεάστηκε βαθύτατα από τις φιλοσοφικές αρχές του Μπερξόν και του Νίτσε. Την εποχή αυτή αρχίζει η συστηματική του ενασχόληση με τα γράμματα. Περισσότερα για τον συγγραφέα μπορείτε να μάθετε [εδώ](https://www.kazantzaki.gr/gr/short-biography)
+  utter_educational:
+  - text: Στο Μουσείο Νίκος Καζαντζάκης έχουν σχεδιαστεί και υλοποιούνται μία σειρά από ενδιαφέροντα εκπαιδευτικά προγράμματα που απευθύνονται σε όλες τις ηλικιακές ομάδες. Περισσότερες πληροφορίες μπορείτε να βρείτε [εδώ](https://www.kazantzaki.gr/gr/ekpaideutika-programmata). Επιπλέον το ΜΝΚ δίνει την δυνατότητα στα σχολεία να σχεδιάσουν και υλοποιήσουν μια οργανωμένη εκπαιδευτική επίσκεψη. Περισσότερα [εδώ](https://www.kazantzaki.gr/gr/ekpaideutiki-episkepsi)
+  utter_timetable:
+  - text: Το Μουσείο Νίκος Καζαντζάκης είναι ανοικτό καθόλη την διάρκεια του έτους με διαφορετικά ωράρια κατα τους θερινούς και χειμερινούς μήνες. Περισσότερες πληροφορίες για το ωράριο και τις ημέρες αργίες μπορείτε να βρείτε [εδώ](https://www.kazantzaki.gr/gr/opening-hours)
+  utter_tourtime:
+  - text: Μπορείτε να περιηγηθείτε στις αίθουσες του μουσείο όση ώρα το επιθυμείτε και ανάλογα τα ενδιαφέροντα σας. Εναλλακτικά μπορείτε να επιλέξετε μία οργανωμένη ξενάγηση, η οποία διαρκεί περίπου 40 με 50 λεπτά. Περισσότερες πληροφορίες μπορείτε να δείτε [εδώ](https://www.kazantzaki.gr/gr/tour)
+  utter_events:
+  - text: Στο μουσείο πραγματοποιούνται αρκετές δράσεις και εκδηλώσεις που αφορούν το έργο του Νίκου Καζαντζάκη και άλλα επίκαιρα θέματα ενδιαφέροντος. Την περίοδο αυτή λόγω των μέτρων υγειονομικής προστασίας οι ανοικτές στο κοινό δράσεις είναι περιορισμένες. Περισσότερες πληροφορίες μπορείτε να βρείτε [εδώ](https://www.kazantzaki.gr/gr/events)
+  utter_gnorimia:
+  - text: test
+actions: []
+forms: {}
+e2e_actions: []

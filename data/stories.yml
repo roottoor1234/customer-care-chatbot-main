@@ -1,0 +1,194 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Basic Story1
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: location
+  - action: utter_location
+  - intent: access
+  - action: utter_access
+  - intent: cost
+  - action: utter_ticket
+  - intent: reason
+  - action: utter_reason
+  - action: utter_goodbye
+- story: Story from Conversation ID 0dabae07dc764f74be4afb8dc1dd190d
+  steps:
+  - action: utter_reason
+  - intent: access
+  - action: utter_access
+- story: Basic Story2
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: cost
+  - action: utter_ticket
+  - intent: location
+  - action: utter_location
+  - intent: access
+  - action: utter_access
+  - intent: reason
+  - action: utter_reason
+  - intent: affirm
+  - action: utter_happy
+- story: Basic story3
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: location
+  - action: utter_location
+  - intent: cost
+  - action: utter_ticket
+  - intent: access
+  - action: utter_access
+  - intent: reason
+  - action: utter_reason
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 501d88e9441e4fbf8ee0fed4a279a8ad
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: reason
+  - action: utter_reason
+  - intent: cost
+  - action: utter_ticket
+  - intent: access
+  - action: utter_access
+  - intent: location
+  - action: utter_location
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 461b452f10da4019b2f4e4d87dfdd600
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: cost
+  - action: utter_ticket
+  - intent: access
+  - action: utter_access
+  - intent: location
+  - action: utter_location
+  - intent: reason
+  - action: utter_reason
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 4819f53d52784a2e96a4dc19eb0ea30a
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: location
+  - action: utter_location
+  - intent: reason
+  - action: utter_reason
+  - intent: reason
+  - action: utter_reason
+  - intent: deny
+  - action: action_default_fallback
+  - intent: reason
+  - action: utter_reason
+  - intent: reason
+  - action: utter_reason
+  - intent: reason
+  - action: utter_reason
+  - intent: reason
+  - action: utter_reason
+  - intent: location
+  - action: utter_location
+  - intent: reason
+  - action: utter_reason
+- story: Story from Conversation ID 2c093448fa3a4359b842a2dc652dda21
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: education
+  - action: utter_educational
+  - intent: biography
+  - action: utter_bio
+  - intent: cost
+  - action: utter_ticket
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID f55593246e0c4936b2e0023c57361450
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: location
+  - action: utter_location
+  - intent: timetable
+  - action: utter_timetable
+  - intent: access
+  - action: utter_access
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 2b7b0361240f48e48cac64e3985bccda
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: location
+  - action: utter_location
+  - intent: access
+  - action: utter_access
+  - intent: visit
+  - action: utter_tourtime
+  - intent: reason
+  - action: utter_reason
+  - intent: biography
+  - action: utter_did_that_help
+  - intent: biography
+  - action: utter_bio
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID cc0aa6cb22164a65ade1a6c724d00b8b
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_welcome
+  - intent: location
+  - action: utter_location
+  - intent: timetable
+  - action: utter_timetable
+  - intent: visit
+  - action: utter_tourtime
+  - intent: reason
+  - action: utter_reason
+  - intent: biography
+  - action: utter_bio
+  - intent: events
+  - action: utter_events
+  - intent: education
+  - action: utter_educational
+  - intent: cost
+  - action: utter_ticket
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID d4a2265237244488bd19c972486926ec
+  steps:
+  - intent: Καλωσόρισμα
+  - action: utter_gnorimia
+  - intent: goodbye
+  - action: utter_goodbye
